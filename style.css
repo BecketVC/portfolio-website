@@ -462,15 +462,14 @@ section > p {
 footer {
   background: rgba(18, 18, 18, 0.98);
   color: white;
-  padding: 24px 24px 20px;
-  margin-top: 18px;
-  position: relative;
+  padding: 32px 24px;
+  margin-top: 30px;
 }
 
 .footer-grid {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   gap: 24px;
   max-width: 1000px;
@@ -483,10 +482,6 @@ footer {
   padding: 0;
   background: transparent;
   box-shadow: none;
-}
-
-.footer-brand {
-  align-self: flex-end;
 }
 
 .footer-brand p,
