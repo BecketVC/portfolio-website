@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bunny Space</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <a href="#home">home</a>
+    <a href="#about">about me</a>
+    <a href="#skills">skills</a>
+    <a href="#projects">projects</a>
+    <a href="#songs">songs</a>
+    <a href="#contact">contact</a>
+  </nav>
+
+  <header id="home">
+    <div class="avatar-circle">
+      <div class="bunny">🐰</div>
+    </div>
+
+    <h1>welcome to <span>bunny</span> space</h1>
+    <p>scroll down to learn more about me!</p>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>about me</h2>
+      <p>
+        howdy! I'm <strong>Your Name</strong>, a web developer who loves creating beautiful,
+        user-friendly designs. I'm passionate about UI, creativity, and making the web a more
+        delightful place.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>skills</h2>
+      <p>my tools of the trade!</p>
+
+      <div class="skill-row">
+        <div class="skill-card">
+          <div class="skill-icon">HTML</div>
+          <p>html</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">CSS</div>
+          <p>css</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">JS</div>
+          <p>javascript</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">B</div>
+          <p>bootstrap</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>projects</h2>
+      <p>what i've been up to lately!</p>
+
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>match game</h3>
+          <p>try to get all 6 matches in this fun card game!</p>
+          <a href="#">github</a> | <a href="#">demo</a>
+        </div>
+
+        <div class="project-card">
+          <h3>text-to-speech site</h3>
+          <p>click below to hear some kind words, or anything you want!</p>
+          <a href="#">github</a> | <a href="#">demo</a>
+        </div>
+
+        <div class="project-card">
+          <h3>mad libs</h3>
+          <p>take a spin on the classic madlibs fun!</p>
+          <a href="#">github</a> | <a href="#">demo</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="songs">
+      <h2>songs</h2>
+      <p>some of my favorite songs to code to!</p>
+      <p class="note">click on the circle to hear a snippet, but be aware of volume!</p>
+
+      <div class="song-row">
+        <div class="song-card">
+          <button class="song-button" onclick="playSound()">🎵</button>
+          <div class="pink-line"></div>
+          <h3>bounce back</h3>
+          <p>stray kids</p>
+        </div>
+
+        <div class="song-card">
+          <button class="song-button" onclick="playSound()">🎧</button>
+          <div class="pink-line"></div>
+          <h3>supermarine</h3>
+          <p>hans zimmer</p>
+        </div>
+
+        <div class="song-card">
+          <button class="song-button" onclick="playSound()">🎸</button>
+          <div class="pink-line"></div>
+          <h3>alkaline</h3>
+          <p>sleep token</p>
+        </div>
+
+        <div class="song-card">
+          <button class="song-button" onclick="playSound()">🌙</button>
+          <div class="pink-line"></div>
+          <h3>run for the hills</h3>
+          <p>tate mcrae</p>
+        </div>
+
+        <div class="song-card">
+          <button class="song-button" onclick="playSound()">✨</button>
+          <div class="pink-line"></div>
+          <h3>heavy</h3>
+          <p>the marías</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>contact</h2>
+      <p>don't be shy, reach out!</p>
+
+      <div class="contact-row">
+        <a href="#">in</a>
+        <a href="#">GH</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 <span>Your Name</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

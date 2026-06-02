@@ -1,0 +1,274 @@
+:root {
+  --dark-pink: #922948;
+  --medium-pink: #bf6c78;
+  --light-pink: #ffe5dd;
+  --card-pink: #f8a7ad;
+  --text: #3f3034;
+  --white: #fff8f5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--light-pink);
+  color: var(--text);
+  text-align: center;
+}
+
+nav {
+  background: var(--dark-pink);
+  padding: 14px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  margin: 0 18px;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: #ffd2d2;
+}
+
+header {
+  min-height: 450px;
+  background:
+    linear-gradient(rgba(146, 41, 72, 0.25), rgba(146, 41, 72, 0.25)),
+    radial-gradient(circle, #dda0a0 1px, transparent 1px);
+  background-size: auto, 24px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-circle {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  border: 5px double var(--medium-pink);
+  background: var(--dark-pink);
+  display: grid;
+  place-items: center;
+  margin-bottom: 25px;
+}
+
+.bunny {
+  font-size: 100px;
+  background: white;
+  width: 160px;
+  height: 130px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-size: 34px;
+}
+
+h1 span {
+  background: var(--white);
+  color: var(--dark-pink);
+  padding: 4px 35px;
+  border-radius: 4px;
+}
+
+header p {
+  color: white;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 35px 20px;
+}
+
+section {
+  padding: 32px 0;
+}
+
+h2 {
+  color: var(--dark-pink);
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+
+section > p {
+  max-width: 700px;
+  margin: 0 auto 18px;
+  line-height: 1.6;
+}
+
+.skill-row,
+.song-row,
+.contact-row {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.skill-icon {
+  width: 70px;
+  height: 70px;
+  background: var(--card-pink);
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+}
+
+.skill-card p {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.project-grid {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.project-card {
+  background: var(--card-pink);
+  width: 240px;
+  padding: 24px;
+  border-radius: 6px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h3 {
+  color: var(--dark-pink);
+  margin-bottom: 14px;
+}
+
+.project-card p {
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.project-card a {
+  color: var(--dark-pink);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.note {
+  font-style: italic;
+  font-size: 14px;
+}
+
+.song-card {
+  width: 140px;
+}
+
+.song-button {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid var(--dark-pink);
+  background: var(--white);
+  font-size: 42px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.song-button:hover {
+  transform: scale(1.06) rotate(-3deg);
+}
+
+.pink-line {
+  height: 7px;
+  background: var(--card-pink);
+  border-radius: 999px;
+  margin: 20px auto 12px;
+}
+
+.song-card h3 {
+  color: var(--dark-pink);
+  font-size: 15px;
+}
+
+.song-card p {
+  font-size: 12px;
+}
+
+.contact-row a {
+  width: 70px;
+  height: 70px;
+  background: #ffb9b9;
+  color: white;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+footer {
+  background: var(--dark-pink);
+  color: white;
+  padding: 22px;
+  margin-top: 30px;
+}
+
+footer span {
+  background: var(--white);
+  color: var(--dark-pink);
+  padding: 2px 24px;
+  border-radius: 4px;
+}
+
+/* makes it look good on phones */
+@media (max-width: 650px) {
+  nav a {
+    display: inline-block;
+    margin: 6px 8px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .avatar-circle {
+    width: 190px;
+    height: 190px;
+  }
+
+  .bunny {
+    width: 125px;
+    height: 100px;
+    font-size: 70px;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+}
