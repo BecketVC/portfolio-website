@@ -61,7 +61,80 @@ header {
   justify-content: center;
 }
 
+.particle-layer {
+  position: absolute;
+  left: 0;
+  top: 18%;
+  width: 100%;
+  height: 360px;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+  animation: particleDrift 18s ease-in-out infinite;
+}
+
+.particle-layer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(255,255,255,0.12) 0, transparent 18%),
+    radial-gradient(circle at 75% 18%, rgba(255,255,255,0.08) 0, transparent 14%),
+    radial-gradient(circle at 40% 55%, rgba(255,255,255,0.06) 0, transparent 20%),
+    radial-gradient(circle at 88% 60%, rgba(255,255,255,0.05) 0, transparent 18%);
+  pointer-events: none;
+}
+
+.particle-layer .particle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 0 16px rgba(255,255,255,0.2);
+  opacity: var(--particle-opacity, 0.85);
+  width: var(--particle-size, 4px);
+  height: var(--particle-size, 4px);
+  transform: translate(-50%, -50%);
+  animation: particleFloat var(--particle-duration, 14s) ease-in-out infinite var(--particle-delay, 0s);
+}
+
+@keyframes particleFloat {
+  0% {
+    transform: translate(-50%, -50%) translate(0, 0) scale(1);
+    opacity: var(--particle-opacity, 0.85);
+  }
+  25% {
+    transform: translate(-50%, -50%) translate(var(--dx, 0px), var(--dy, 0px)) scale(1.1);
+    opacity: calc(var(--particle-opacity, 0.85) - 0.12);
+  }
+  50% {
+    transform: translate(-50%, -50%) translate(calc(var(--dx, 0px) * -1), calc(var(--dy, 0px) * -1)) scale(1);
+    opacity: var(--particle-opacity, 0.85);
+  }
+  75% {
+    transform: translate(-50%, -50%) translate(var(--dx, 0px), calc(var(--dy, 0px) * -1)) scale(1.05);
+    opacity: calc(var(--particle-opacity, 0.85) - 0.08);
+  }
+  100% {
+    transform: translate(-50%, -50%) translate(0, 0) scale(1);
+    opacity: var(--particle-opacity, 0.85);
+  }
+}
+
+@keyframes particleDrift {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .avatar-circle {
+  position: relative;
+  z-index: 2;
   width: 240px;
   height: 240px;
   border-radius: 50%;
@@ -133,6 +206,13 @@ header p {
   margin: 12px 0 10px;
   letter-spacing: 0.02em;
   text-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2;
+}
+
+header h1 {
+  position: relative;
+  z-index: 2;
 }
 
 main {
