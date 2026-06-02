@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bunny Space</title>
+  <title>Becket's Space</title>
 
   <link rel="stylesheet" href="style.css" />
 
@@ -18,38 +18,39 @@
 
 <body>
   <nav>
-    <a href="#home">home</a>
-    <a href="#about">about me</a>
-    <a href="#skills">skills</a>
-    <a href="#projects">projects</a>
-    <a href="#songs">songs</a>
-    <a href="#contact">contact</a>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#games">Games</a>
+    <a href="#contact">Contact</a>
   </nav>
 
   <header id="home">
     <div class="avatar-circle">
-      <div class="bunny">🐰</div>
+      <div class="bunny">
+        <img src="profile.jpg" alt="Profile picture" />
+      </div>
     </div>
 
-    <h1>welcome to <span>bunny</span> space</h1>
-    <p>scroll down to learn more about me!</p>
+    <h1>Welcome to <span>Becket's</span> Space</h1>
+    <p class="scroll-arrow">↓</p>
   </header>
 
   <main>
-    <section id="about">
-      <h2>about me</h2>
-      <p>
-        howdy! I'm <strong>Your Name</strong>, a web developer who loves creating beautiful,
-        user-friendly designs. I'm passionate about UI, creativity, and making the web a more
-        delightful place.
-      </p>
-    </section>
+    <div class="intro-grid">
+      <section id="about" class="card-panel">
+        <h2>About Me</h2>
+        <p>
+          Hi there — I’m <strong>Becket</strong>, a creative maker who builds polished web experiences in my free time.
+          I enjoy blending thoughtful interaction, clean visuals, and playful details into small passion projects.
+          My focus is on learning through doing, experimenting with UI, and making the web feel friendly and personal.
+        </p>
+      </section>
 
-    <section id="skills">
-      <h2>skills</h2>
-      <p>my tools of the trade!</p>
-
-      <div class="skill-row">
+      <section id="skills" class="card-panel">
+        <h2>Skills</h2>
+        <div class="skill-row">
         <div class="skill-card">
           <div class="skill-icon">HTML</div>
           <p>html</p>
@@ -71,77 +72,77 @@
         </div>
       </div>
     </section>
+  </div>
 
     <section id="projects">
-      <h2>projects</h2>
+      <h2>Projects</h2>
       <p>what i've been up to lately!</p>
 
       <div class="project-grid">
         <div class="project-card">
-          <h3>match game</h3>
-          <p>try to get all 6 matches in this fun card game!</p>
+          <h3>Portfolio Builder</h3>
+          <p>A simple web tool to generate a personal portfolio page from prompts, with live preview and reusable theme presets.</p>
           <a href="#">github</a> | <a href="#">demo</a>
         </div>
 
         <div class="project-card">
-          <h3>text-to-speech site</h3>
-          <p>click below to hear some kind words, or anything you want!</p>
+          <h3>TaskFlow</h3>
+          <p>An interactive workflow planner that turns to-do lists into visual project boards with drag-and-drop task cards.</p>
           <a href="#">github</a> | <a href="#">demo</a>
         </div>
 
         <div class="project-card">
-          <h3>mad libs</h3>
-          <p>take a spin on the classic madlibs fun!</p>
+          <h3>Sound Sketch</h3>
+          <p>A browser-based audio playground for creating beats and visualizing sound using custom controls and animations.</p>
           <a href="#">github</a> | <a href="#">demo</a>
         </div>
       </div>
     </section>
 
-    <section id="songs">
-      <h2>songs</h2>
-      <p>some of my favorite songs to code to!</p>
-      <p class="note">click on the circle to hear a snippet, but be aware of volume!</p>
+    <section id="games">
+      <h2>Favorite Games</h2>
+      <p>the titles i play the most, with total hours logged as the description.</p>
 
       <div class="song-row">
         <div class="song-card">
-          <button class="song-button" onclick="playSound()">🎵</button>
-          <div class="pink-line"></div>
-          <h3>bounce back</h3>
-          <p>stray kids</p>
+          <button class="song-button">🚀</button>
+          <div class="accent-line"></div>
+          <h3>Geometry Dash</h3>
+          <p>6368.6 hours</p>
         </div>
 
         <div class="song-card">
-          <button class="song-button" onclick="playSound()">🎧</button>
-          <div class="pink-line"></div>
-          <h3>supermarine</h3>
-          <p>hans zimmer</p>
+          <button class="song-button">⛏️</button>
+          <div class="accent-line"></div>
+          <h3>Minecraft</h3>
+          <p>6122.1 hours</p>
         </div>
 
         <div class="song-card">
-          <button class="song-button" onclick="playSound()">🎸</button>
-          <div class="pink-line"></div>
-          <h3>alkaline</h3>
-          <p>sleep token</p>
+          <button class="song-button">🪓</button>
+          <div class="accent-line"></div>
+          <h3>Terraria</h3>
+          <p>1695.3 hours</p>
         </div>
 
         <div class="song-card">
-          <button class="song-button" onclick="playSound()">🌙</button>
-          <div class="pink-line"></div>
-          <h3>run for the hills</h3>
-          <p>tate mcrae</p>
+          <button class="song-button">⚔️</button>
+          <div class="accent-line"></div>
+          <h3>Metal Gear Rising</h3>
+          <p>208.7 hours</p>
         </div>
 
         <div class="song-card">
-          <button class="song-button" onclick="playSound()">✨</button>
-          <div class="pink-line"></div>
-          <h3>heavy</h3>
-          <p>the marías</p>
+          <button class="song-button">🎈</button>
+          <div class="accent-line"></div>
+          <h3>Bloons TD 6</h3>
+          <p>153.7 hours</p>
         </div>
       </div>
     </section>
 
     <section id="contact">
-      <h2>contact</h2>
+      <h2>Contact</h2>
       <p>don't be shy, reach out!</p>
 
       <div class="contact-row">
@@ -152,7 +153,18 @@
   </main>
 
   <footer>
-    <p>© 2025 <span>Your Name</span></p>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <p>© 2026 Becket</p>
+        <p>A hobbyist building bright, modern web experiences with a friendly design touch.</p>
+      </div>
+      <div class="footer-contact">
+        <p><strong>Email</strong></p>
+        <p><a href="mailto:bvchester@smu.edu">bvchester@smu.edu</a></p>
+        <p><strong>Phone</strong></p>
+        <p><a href="tel:+4699758525">+1 (469) 975-8525</a></p>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
