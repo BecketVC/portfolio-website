@@ -145,6 +145,17 @@ section {
   padding: 44px 0;
 }
 
+#projects {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  padding: 44px 20px;
+  background: white;
+}
+
 section:nth-of-type(odd) {
   background: rgba(255, 255, 255, 0.72);
 }
@@ -224,6 +235,17 @@ section > p {
   transform-origin: center top;
 }
 
+#about.card-panel h2 {
+  display: inline-block;
+  margin: 0 auto 18px;
+}
+
+#about.card-panel p {
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: left;
+}
+
 #about.card-panel:hover {
   transform: scale(1.02);
   box-shadow: 0 32px 75px rgba(20, 20, 20, 0.15);
@@ -233,8 +255,13 @@ section > p {
   margin-bottom: 18px;
 }
 
-.card-panel h2::after {
-  margin: 16px 0 0 0;
+#about .card-panel h2 {
+  display: inline-block;
+  margin: 0 auto 18px;
+}
+
+#about .card-panel h2::after {
+  margin: 16px auto 0;
 }
 
 .card-panel p {
@@ -322,7 +349,8 @@ section > p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 22px;
-  margin-top: 24px;
+  margin: 24px auto 0;
+  max-width: 1080px;
 }
 
 .project-card {
@@ -434,8 +462,9 @@ section > p {
 footer {
   background: rgba(18, 18, 18, 0.98);
   color: white;
-  padding: 32px 24px;
-  margin-top: 30px;
+  padding: 24px 24px 20px;
+  margin-top: 18px;
+  position: relative;
 }
 
 .footer-grid {
@@ -454,6 +483,10 @@ footer {
   padding: 0;
   background: transparent;
   box-shadow: none;
+}
+
+.footer-brand {
+  align-self: flex-end;
 }
 
 .footer-brand p,
