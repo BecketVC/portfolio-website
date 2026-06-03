@@ -68,7 +68,7 @@ nav a:hover {
 
 header {
   position: relative;
-  min-height: 400px;
+  min-height: 360px;
   padding: 40px 20px 24px;
   background: linear-gradient(135deg, rgba(255, 140, 0, 0.55), rgba(255, 185, 0, 0.18)),
     radial-gradient(circle at 20% 20%, rgba(255, 140, 0, 0.28), transparent 28%),
@@ -79,6 +79,10 @@ header {
   justify-content: center;
   justify-items: start;
   gap: 60px;
+}
+
+.avatar-circle {
+  margin-left: 80px;
 }
 
 header > h1 {
@@ -261,6 +265,7 @@ section {
   width: 100vw;
   padding: 44px 20px;
   background: white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.02);
 }
 
 #contact {
@@ -353,8 +358,9 @@ section > p {
   transform-origin: center top;
 }
 
-#skills.card-panel {
-  background: #fafafa;
+#skills.card-panel,
+#about.card-panel {
+  background: #fbfbfb;
 }
 
 #about.card-panel h2 {
@@ -677,10 +683,26 @@ section#games {
 }
 
 footer {
+  position: relative;
+  overflow: visible;
   background: rgba(18, 18, 18, 0.98);
   color: white;
   padding: 28px 24px;
   margin-top: 6px;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 180%;
+  height: 320px;
+  pointer-events: none;
+  background: radial-gradient(circle at 50% 100%, rgba(255, 140, 0, 0.44), rgba(255, 140, 0, 0.18) 24%, transparent 60%);
+  filter: blur(36px);
+  z-index: -1;
 }
 
 .footer-grid {
