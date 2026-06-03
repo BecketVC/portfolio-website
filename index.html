@@ -13,7 +13,7 @@
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -39,7 +39,7 @@
       </div>
     </div>
 
-    <h1>Welcome to <span>Becket's</span> Home</h1>
+    <h1>Welcome to <span>Becket's</span> Home.</h1>
     <p class="scroll-arrow">↓</p>
   </header>
 
@@ -106,44 +106,102 @@
     </section>
 
     <section id="games">
-      <h2>Favorite Games</h2>
-      <p>Selected favorites with total play time shown as a personal activity metric.</p>
+      <h2>Favorites</h2>
+      <p>Selected favorites with total play time and show watch date. Use the arrows to slide between games and favorite shows.</p>
 
-      <div class="song-row">
-        <div class="song-card">
-          <button class="song-button">🚀</button>
-          <div class="accent-line"></div>
-          <h3>Geometry Dash</h3>
-          <p>6368.6 hours</p>
+      <div class="favorite-carousel">
+        <button class="favorite-arrow favorite-prev" aria-label="Show previous favorites">‹</button>
+
+        <div class="favorite-track-container">
+          <div class="favorite-track">
+            <div class="favorite-page">
+              <h3 class="page-subtitle">Favorite Games</h3>
+              <div class="song-row">
+                <div class="song-card">
+                  <button class="song-button">▶</button>
+                  <div class="accent-line"></div>
+                  <h3>Geometry Dash</h3>
+                  <p>6,370 hours</p>
+                </div>
+
+                <div class="song-card">
+                  <button class="song-button">■</button>
+                  <div class="accent-line"></div>
+                  <h3>Minecraft</h3>
+                  <p>6,120 hours</p>
+                </div>
+
+                <div class="song-card">
+                  <button class="song-button">♦</button>
+                  <div class="accent-line"></div>
+                  <h3>Terraria</h3>
+                  <p>1,700 hours</p>
+                </div>
+
+                <div class="song-card">
+                  <button class="song-button">✦</button>
+                  <div class="accent-line"></div>
+                  <h3>Metal Gear Rising</h3>
+                  <p>210 hours</p>
+                </div>
+
+                <div class="song-card">
+                  <button class="song-button">●</button>
+                  <div class="accent-line"></div>
+                  <h3>Bloons TD 6</h3>
+                  <p>150 hours</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="favorite-page">
+              <h3 class="page-subtitle">Favorite Shows</h3>
+              <div class="song-row">
+                <div class="song-card">
+                  <button class="song-button">🏴‍☠️</button>
+                  <div class="accent-line"></div>
+                  <h3>One Piece</h3>
+                  <p>May 2025</p>
+                </div>
+
+                <div class="song-card">
+                  <button class="song-button">⚔️</button>
+                  <div class="accent-line"></div>
+                  <h3>Attack on Titan</h3>
+                  <p>Dec 2024</p>
+                </div>
+
+                <div class="song-card">
+                  <button class="song-button">💼</button>
+                  <div class="accent-line"></div>
+                  <h3>Better Call Saul</h3>
+                  <p>Apr 2022</p>
+                </div>
+
+                <div class="song-card">
+                  <button class="song-button">🧪</button>
+                  <div class="accent-line"></div>
+                  <h3>Breaking Bad</h3>
+                  <p>Jul 2020</p>
+                </div>
+
+                <div class="song-card">
+                  <button class="song-button">📓</button>
+                  <div class="accent-line"></div>
+                  <h3>Death Note</h3>
+                  <p>Aug 2017</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="favorite-dots" aria-label="Favorite carousel page indicator">
+            <span class="favorite-dot active"></span>
+            <span class="favorite-dot"></span>
+          </div>
         </div>
 
-        <div class="song-card">
-          <button class="song-button">⛏️</button>
-          <div class="accent-line"></div>
-          <h3>Minecraft</h3>
-          <p>6122.1 hours</p>
-        </div>
-
-        <div class="song-card">
-          <button class="song-button">🪓</button>
-          <div class="accent-line"></div>
-          <h3>Terraria</h3>
-          <p>1695.3 hours</p>
-        </div>
-
-        <div class="song-card">
-          <button class="song-button">⚔️</button>
-          <div class="accent-line"></div>
-          <h3>Metal Gear Rising</h3>
-          <p>208.7 hours</p>
-        </div>
-
-        <div class="song-card">
-          <button class="song-button">🎈</button>
-          <div class="accent-line"></div>
-          <h3>Bloons TD 6</h3>
-          <p>153.7 hours</p>
-        </div>
+        <button class="favorite-arrow favorite-next" aria-label="Show next favorites">›</button>
       </div>
     </section>
 
