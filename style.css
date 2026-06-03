@@ -708,7 +708,7 @@ footer::before {
 .footer-grid {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   flex-wrap: wrap;
   gap: 24px;
   max-width: 1000px;
@@ -718,7 +718,7 @@ footer::before {
 .footer-brand,
 .footer-contact {
   text-align: left;
-  padding: 12px 0 0;
+  padding: 0;
   background: transparent;
   box-shadow: none;
 }
